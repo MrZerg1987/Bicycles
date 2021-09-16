@@ -6,6 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <link rel="icon" href="favicon/favicon.ico">
+
   <link rel="preload" href="fonts/opensans-bold.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/opensans-light.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/opensans-regular.woff2" as="font" crossorigin="anonymous">
@@ -14,6 +16,89 @@
   <link rel="stylesheet" href="css/style.min.css">
   <title>Велосипеды</title>
 </head>
+
 <body>
+  <header class="header container">
+    <h1 class="visually-hidden">Интернет-магазин по продаже велосипедов</h1>
+    <a class="header__logo">
+      <img width="68" height="20" src="img/svg/logo.svg" alt="Логотип компании по продаже велосипедов">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle main-nav__toggle--close main-nav__toggle--no-js" type="button" aria-label="Открыть/закрыть меню"></button>
+      <ul class="main-nav__list main-nav__list--no-js">
+        <li class="main-nav__item">
+          <a href="#about " class="main-nav__link">О нас</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#types" class="main-nav__link">Виды велосипедов</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#video" class="main-nav__link">Видео про велосипеды</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#contacts" class="main-nav__link">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <section class="main-block">
+    <h2 class="visually-hidden">Раздел с формой обратной связи</h2>
+    <h3 class="main-block__title">Мы продаем велосипеды</h3>
+    <p class="main-block__description">Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
+    <form class="main-block__form" method="GET" action="https://echo.htmlacademy.ru">
+      <p class="main-block__form-description">Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
+      <label>
+        <input type="name" name="name" placeholder="Введите Ваше Имя" required="">
+      </label>
+      <label>
+        <input type="tel" name="tel" placeholder="Введите Ваш номер телефона" required="">
+      </label>
+      <button type="submit" class="main-block__form-button-submit">
+        Подобрать велосипед мечты
+      </button>
+    </form>
+  </section>
+  <footer class="contacts">
+    <h2 class="contacts__title">Как нас найти?</h2>
+    <p class="contacts__description">
+      Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19
+    </p>
+    <picture class="contacts__map">
+      <source type="image/webp" media="(max-width: 767px)" srcset="
+            img/content/map-mobile-@1x.webp 1x,
+            img/content/map-mobile-@2x.webp 2x
+          ">
+      <source type="image/webp" media="(max-width: 1023px)" srcset="
+            img/content/map-tablet-@1x.webp 1x,
+            img/content/map-tablet-@2x.webp 2x
+          ">
+      <source type="image/webp" srcset="
+            img/content/map-desktop-@1x.webp 1x,
+            img/content/map-desktop-@2x.webp 2x
+          ">
+
+      <source media="(max-width: 767px)" srcset="
+            img/content/map-mobile-@1x.png 1x,
+            img/content/map-mobile-@2x.png 2x
+          ">
+      <source media="(max-width: 1023px)" srcset="
+            img/content/map-tablet-@1x.png 1x,
+            img/content/map-tablet-@2x.png 2x
+          ">
+      <img src="img/content/map-desktop-@1x.png" srcset="
+            img/content/map-desktop-@1x.png 1x,
+            img/content/map-desktop-@2x.png 2x
+          " alt="Карта компании по продаже велосипедов с адресом: Санкт-Петербург, ул. Большая Конюшенная, д. 19" width="957" height="530">
+    </picture>
+    <a href="mailto:puteshestviemechta@gmail.ru" class="contacts__mail" aria-label="Открыть электронную почту"><svg width="26" height="20">
+        <use xlink:href="img/svg/sprite_auto.svg#icon-mail"></use>
+      </svg>puteshestviemechta@gmail.ru
+    </a>
+    <a href="tel:+749978468446" class="contacts__phone" aria-label="Позвонить в компанию Way">
+      <svg width="30" height="30">
+        <use xlink:href="img/svg/sprite_auto.svg#icon-phone"></use>
+      </svg>+7 (499) -784-684-46</a>
+  </footer>
 </body>
+
 </html>

@@ -1,3 +1,20 @@
-h1 {
-  color: red;
-}
+@import "variables";
+@import "vendor/normalize";
+@import "global/container";
+@import "global/fonts";
+@import "global/reboot";
+@import "global/utils";
+@import "blocks/places-visit";
+@import "blocks/expanded";
+@import "blocks/body";
+@import "blocks/price";
+@import "blocks/questions";
+@import "blocks/next-travel";
+@import "blocks/contacts";
+@import "blocks/info";
+@import "blocks/footer";
+@import "blocks/header";
+@import "blocks/intro";
+@import "blocks/main-nav";
+@import "blocks/message-success";
+@import "blocks/red-link";

@@ -1,0 +1,16 @@
+.red-link {
+  display: flex;
+
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 20px;
+  color: $color-white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+
+  background-color: $color-red;
+
+  &:hover {
+    background-color: $color-orange;
+  }
+}

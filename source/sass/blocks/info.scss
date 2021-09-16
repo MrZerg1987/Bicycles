@@ -1,0 +1,42 @@
+.info {
+  width: 387px;
+  padding-left: 55px;
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+.info__title {
+  margin: 0;
+
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 32px;
+  color: $color-special-black;
+
+  @media (max-width: $tablet-width) {
+    margin-top: 30px;
+
+    text-align: center;
+  }
+}
+
+.info__description {
+  width: 320px;
+  margin: 0;
+  margin-top: 20px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: $color-dark-grey-opacity-50;
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+    margin-top: 20px;
+
+    text-align: center;
+  }
+}
