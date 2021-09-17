@@ -1,29 +1,29 @@
 .intro {
   display: flex;
-  justify-content: center;
-  min-width: 1024px;
-  padding: 185px 0 297px;
+  flex-direction: column;
+  height: 825px;
+  padding: 0 250px;
 
-  color: $color-white;
-
-  background-color: $color-blue;
-  background-image: url("../img/content/intro-background-desktop-@1x.jpg");
+  background-color: $color-black;
+  background-image: url("../img/content/background-desktop-@1x.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
 
-  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    background-image: url("../img/content/intro-background-desktop-@2x.jpg");
+  @media (min-resolution: 144dpi),
+  (min-resolution: 1.5dppx) {
+    background-image: url("../img/content/background-desktop-@2x.jpg");
   }
 
   @media (max-width: $tablet-width) {
     min-width: 768px;
     padding: 60px 0 83px;
 
-    background-image: url("../img/content/intro-background-tablet-@1x.jpg");
+    background-image: url("../img/content/background-tablet-@1x.jpg");
 
-    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-      background-image: url("../img/content/intro-background-tablet-@2x.jpg");
+    @media (min-resolution: 144dpi),
+    (min-resolution: 1.5dppx) {
+      background-image: url("../img/content/background-tablet-@2x.jpg");
     }
   }
 
@@ -57,11 +57,12 @@
     font-size: 24px;
     line-height: 36px;
 
-    background-color: $color-blue;
+    background-color: $color-black;
     background-image: url("../img/content/intro-background-mobile-@1x.jpg");
     background-size: cover;
 
-    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    @media (min-resolution: 144dpi),
+    (min-resolution: 1.5dppx) {
       background-image: url("../img/content/intro-background-mobile-@2x.jpg");
     }
   }
@@ -116,7 +117,7 @@
     margin-top: 20px;
     padding: 0 16px;
 
-    color: $color-dark-blue;
+    // color: $color-dark-blue;
   }
 }
 

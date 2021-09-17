@@ -1,62 +1,81 @@
 .header {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-  padding-top: 16px;
-  padding-bottom: 3px;
-
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 17px;
-
-  @media (max-width: $tablet-width) {
-    display: flex;
-    padding-top: 0;
-    padding-bottom: 0;
-  }
+  position: relative;
+  margin: 0 auto;
+  padding-top: 12px;
 }
 
 .header__logo {
-  display: flex;
-  padding: 23px 0 28px;
+  position: absolute;
+  left: 30px;
+  top: 318px;
 
-  @media (max-width: $tablet-width) {
-    padding: 15px 0 13px;
-  }
+  // @media (max-width: $tablet-width) {
+  //   padding: 15px 0 13px;
+  // }
 }
 
-.header__block-menu {
-  display: grid;
+// .header {
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+//   padding-top: 16px;
+//   padding-bottom: 3px;
 
-  grid-column-gap: 50px;
-  grid-template-columns: 1fr 232px;
+//   font-weight: 500;
+//   font-size: 14px;
+//   line-height: 17px;
 
-  @media (max-width: $tablet-width) {
-    display: flex;
-  }
-}
+//   @media (max-width: $tablet-width) {
+//     display: flex;
+//     padding-top: 0;
+//     padding-bottom: 0;
+//   }
+// }
 
-.header__phone {
-  display: inline-flex;
-  justify-content: flex-end;
-  align-items: center;
-  padding-right: 2px;
+// .header__logo {
+//   display: flex;
+//   padding: 23px 0 28px;
 
-  font-size: 18px;
-  line-height: 32px;
-  text-decoration: underline;
+//   @media (max-width: $tablet-width) {
+//     padding: 15px 0 13px;
+//   }
+// }
 
-  &:hover {
-    color: $color-red;
-  }
+// .header__block-menu {
+//   display: grid;
 
-  svg {
-    width: 30px;
-    height: 30px;
-    margin-right: 8px;
-  }
+//   grid-column-gap: 50px;
+//   grid-template-columns: 1fr 232px;
 
-  @media (max-width: $tablet-width) {
-    display: none;
-  }
-}
+//   @media (max-width: $tablet-width) {
+//     display: flex;
+//   }
+// }
+
+// .header__phone {
+//   display: inline-flex;
+//   justify-content: flex-end;
+//   align-items: center;
+//   padding-right: 2px;
+
+//   font-size: 18px;
+//   line-height: 32px;
+//   text-decoration: underline;
+
+//   &:hover {
+//     color: $color-red;
+//   }
+
+//   svg {
+//     width: 30px;
+//     height: 30px;
+//     margin-right: 8px;
+//   }
+
+//   @media (max-width: $tablet-width) {
+//     display: none;
+//   }
+// }
