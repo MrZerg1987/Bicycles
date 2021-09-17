@@ -1,8 +1,39 @@
 .main-block {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   width: 873px;
+  margin: auto;
   padding-top: 260px;
+
+  @media (max-width: $tablet-width) {
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+  }
+}
+
+.main-block__first-block {
+  @media (max-width: $tablet-width) {
+    background-color: $color-black;
+    background-image: url("../img/content/background-tablet-@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (min-resolution: 144dpi),
+    (min-resolution: 1.5dppx) {
+      background-image: url("../img/content/background-tablet-@2x.jpg");
+    }
+
+    @media (max-width: $mobile-width) {
+      background-image: url("../img/content/background-mobile-@1x.jpg");
+
+      @media (min-resolution: 144dpi),
+      (min-resolution: 1.5dppx) {
+        background-image: url("../img/content/background-mobile-@2x.jpg");
+      }
+    }
+  }
 }
 
 .main-block__title {
@@ -14,11 +45,26 @@
   font-size: 46px;
   line-height: 64px;
   color: $color-white;
+
+  @media (max-width: $tablet-width) {
+    width: 525px;
+    margin: 134px auto 20px;
+
+    font-size: 30px;
+    line-height: 42px;
+    text-align: center;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 288px;
+    margin: 120px auto 20px;
+  }
 }
 
 .main-block__description {
   width: 381px;
   margin: 0;
+  margin-bottom: 240px;
 
   font-weight: 300;
   font-size: 20px;
@@ -26,50 +72,18 @@
   color: $color-white;
 
   opacity: 0.8;
-}
 
-.main-block__form {
-  width: 327px;
-
-  input {
-    width: 327px;
-    margin-bottom: 20px;
-    padding: 10px 30px;
-
-    border-radius: 6px;
-
-    &::placeholder {
-      font-size: 15px;
-      line-height: 24px;
-      color: $color-special-black;
-
-      opacity: 0.5;
-    }
+  @media (max-width: $tablet-width) {
+    width: 435px;
+    margin: 0 auto 80px;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 32px;
+    text-align: center;
   }
-}
 
-.main-block__form-description {
-  margin: 0;
-  margin-bottom: 20px;
-
-  font-weight: 600;
-  font-size: 17px;
-  line-height: 28px;
-  text-align: center;
-  color: $color-white;
-}
-
-.main-block__form-button-submit {
-  display: flex;
-  align-items: center;
-  padding: 9px 50px;
-
-  font-weight: 600;
-  font-size: 15px;
-  line-height: 21px;
-  text-align: center;
-  color: $color-black;
-
-  background-color: $color-turquoise;
-  border-radius: 6px;
+  @media (max-width: $mobile-width) {
+    width: 288px;
+    margin: 0 auto 70px;
+  }
 }
