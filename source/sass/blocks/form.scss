@@ -9,7 +9,7 @@
     border-radius: 6px;
 
     &::placeholder {
-      font-size: 15px;
+      font-size: 14px;
       line-height: 24px;
       color: $color-special-black;
 
@@ -17,21 +17,20 @@
     }
 
     @media (max-width: $tablet-width) {
-      width: 321px;
-    }
-
-    @media (max-width: $mobile-width) {
-      width: 288px;
+      width: 100%;
+      padding: 10px 20px;
     }
   }
 
   @media (max-width: $tablet-width) {
-    width: 321px;
+    width: 320px;
+    padding: 0 21px;
     margin: 0 auto;
   }
 
   @media (max-width: $mobile-width) {
     width: 288px;
+    padding: 0 16px;
   }
 }
 
@@ -56,10 +55,10 @@
 .form__button-submit {
   display: flex;
   align-items: center;
-  padding: 9px 50px;
+  padding: 9px 65px;
 
   font-weight: 600;
-  font-size: 15px;
+  font-size: 13px;
   line-height: 21px;
   text-align: center;
   color: $color-black;
@@ -73,10 +72,10 @@
   }
 
   @media (max-width: $tablet-width) {
-    padding: 9px 47px;
+    padding: 9px 41px;
   }
 
   @media (max-width: $mobile-width) {
-    padding: 9px 31px;
+    padding: 9px 30px;
   }
 }

@@ -15,6 +15,8 @@
 
 .main-block__first-block {
   @media (max-width: $tablet-width) {
+    padding: 0 21px;
+
     background-color: $color-black;
     background-image: url("../img/content/background-tablet-@1x.jpg");
     background-repeat: no-repeat;
@@ -26,6 +28,8 @@
     }
 
     @media (max-width: $mobile-width) {
+      padding: 0 16px;
+
       background-image: url("../img/content/background-mobile-@1x.jpg");
 
       @media (min-resolution: 144dpi),
@@ -47,8 +51,10 @@
   color: $color-white;
 
   @media (max-width: $tablet-width) {
-    width: 525px;
+    min-width: 525px;
+    max-width: 100%;
     margin: 134px auto 20px;
+    padding: 0 21px;
 
     font-size: 30px;
     line-height: 42px;
@@ -56,8 +62,9 @@
   }
 
   @media (max-width: $mobile-width) {
-    width: 288px;
+    min-width: 100%;
     margin: 120px auto 20px;
+    padding: 0 16px;
   }
 }
 
@@ -76,6 +83,8 @@
   @media (max-width: $tablet-width) {
     width: 435px;
     margin: 0 auto 80px;
+    padding: 0 21px;
+
     font-weight: 300;
     font-size: 18px;
     line-height: 32px;
@@ -83,7 +92,8 @@
   }
 
   @media (max-width: $mobile-width) {
-    width: 288px;
+    width: 100%;
     margin: 0 auto 70px;
+    padding: 0 16px;
   }
 }

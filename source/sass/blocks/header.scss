@@ -4,8 +4,7 @@
   align-items: center;
   position: relative;
   margin: 0 auto;
-  padding-top: 12px;
-  width: 873px;
+  padding: 12px 75px 0;
 
   @media (max-width: $tablet-width) {
     padding: 0;
@@ -15,7 +14,7 @@
 
 .header__logo {
   position: absolute;
-  left: 0;
+  left: 75px;
   top: 318px;
 
   @media (max-width: $tablet-width) {

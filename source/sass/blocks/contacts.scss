@@ -1,90 +1,101 @@
 .contacts {
-  display: flex;
-  flex-wrap: wrap;
-  width: 397px;
-  padding: 0 65px 63px;
-
-  border-right: 1px solid $color-light-grey;
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 96px;
 
   @media (max-width: $tablet-width) {
-    width: 44%;
-    padding: 0 23px 81px 50px;
-
-    border-right: none;
+    padding: 0 35px 53px;
   }
 
   @media (max-width: $mobile-width) {
-    flex-direction: column;
-    width: 100%;
-    padding: 20px 30px;
-
-    text-align: center;
-
-    border-bottom: 1px solid $color-light-grey;
+    padding-bottom: 51px;
   }
 }
 
 .contacts__title {
-  margin: 0;
+  margin-bottom: 30px;
 
   font-weight: 600;
-  font-size: 18px;
-  line-height: 32px;
+  font-size: 30px;
+  line-height: 30px;
+  text-align: center;
   color: $color-special-black;
+
+  @media (max-width: $tablet-width) {
+    font-size: 24px;
+  }
 }
 
-.contacts__mail {
+.contacts__description {
+  width: 555px;
+  margin: 0 auto 42px;
+
+  font-size: 17px;
+  line-height: 31px;
+  text-align: center;
+  color: $color-black-opacity-70;
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+    padding: 0 69px;
+  }
+}
+
+.contacts__map {
+  img {
+    max-width: 957px;
+    margin: 0 auto 38px;
+
+    @media (max-width: $tablet-width) {
+      max-width: 100%;
+      min-width: 698px;
+    }
+
+    @media (max-width: $mobile-width) {
+      min-width: 320px;
+    }
+  }
+}
+
+.contacts__connection {
   display: flex;
-  margin-top: 20px;
+  justify-content: space-between;
+  max-width: 558px;
+  margin: 0 auto;
 
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 17px;
-  color: $color-red;
-
-  text-decoration-line: underline;
-
-  &:hover svg {
-    color: $color-red;
+  svg {
+    margin-right: 15px;
   }
 
   @media (max-width: $mobile-width) {
-    margin: 20px auto 0;
+    padding: 0 22px;
+    flex-direction: column;
   }
+}
 
-  svg {
-    width: 26px;
-    height: 20px;
-    margin-right: 15px;
+.contacts__mail {
+  font-size: 16px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
 
-    color: $color-light-grey;
+  color: $color-black-opacity-50;
+
+  @media (max-width: $mobile-width) {
+    margin: 0 auto 22px;
   }
 }
 
 .contacts__phone {
-  display: flex;
-  margin-top: 15px;
-
-  font-weight: 400;
   font-size: 16px;
-  line-height: 32px;
-  color: $color-red;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
 
-  text-decoration-line: underline;
-
-  &:hover svg {
-    color: $color-red;
-  }
+  color: $color-black-opacity-50;
 
   @media (max-width: $mobile-width) {
-    margin: 20px auto 0;
-  }
+    margin: 0 auto;
 
-  svg {
-    width: 30px;
-    height: 30px;
-    margin-right: 11px;
-
-    color: $color-light-grey;
   }
 }

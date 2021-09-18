@@ -28,7 +28,7 @@
         <button class="main-nav__toggle main-nav__toggle--close main-nav__toggle--no-js" type="button" aria-label="Открыть/закрыть меню"></button>
         <ul class="main-nav__list main-nav__list--no-js">
           <li class="main-nav__item">
-            <a href="#about " class="main-nav__link">О нас</a>
+            <a href="#about" class="main-nav__link">О нас</a>
           </li>
           <li class="main-nav__item">
             <a href="#types" class="main-nav__link">Виды велосипедов</a>
@@ -62,6 +62,23 @@
       </form>
     </section>
   </div>
+  <section id="about" class="about">
+    <h2 class="about__title">Несколько фактов о нас</h2>
+    <ul class="about__list">
+      <li class="about__item">
+        Самый широкий выбор велосипедов!
+      </li>
+      <li class="about__item">
+        Доставка велосипедов по всей России!
+      </li>
+      <li class="about__item">
+        Большой выбор крутых аксессуаров!
+      </li>
+      <li class="about__item">
+        Профессиональные консультации!
+      </li>
+    </ul>
+  </section>
   <footer id="contacts" class="contacts">
     <h2 class="contacts__title">Как нас найти?</h2>
     <p class="contacts__description">
@@ -94,14 +111,16 @@
             img/content/map-desktop-@2x.png 2x
           " alt="Карта компании по продаже велосипедов с адресом: Санкт-Петербург, ул. Большая Конюшенная, д. 19" width="957" height="530">
     </picture>
-    <a href="mailto:puteshestviemechta@gmail.ru" class="contacts__mail" aria-label="Открыть электронную почту"><svg width="26" height="20">
-        <use xlink:href="img/svg/sprite_auto.svg#icon-mail"></use>
-      </svg>puteshestviemechta@gmail.ru
-    </a>
-    <a href="tel:+749978468446" class="contacts__phone" aria-label="Позвонить в компанию Way">
-      <svg width="30" height="30">
-        <use xlink:href="img/svg/sprite_auto.svg#icon-phone"></use>
-      </svg>+7 (499) -784-684-46</a>
+    <div class="contacts__connection">
+      <a href="mailto:puteshestviemechta@gmail.ru" class="contacts__mail" aria-label="Открыть электронную почту"><svg width="26" height="20">
+          <use xlink:href="img/svg/sprite_auto.svg#icon-mail"></use>
+        </svg>puteshestviemechta@gmail.ru
+      </a>
+      <a href="tel:+749978468446" class="contacts__phone" aria-label="Позвонить в компанию Way">
+        <svg width="30" height="30">
+          <use xlink:href="img/svg/sprite_auto.svg#icon-phone"></use>
+        </svg>+7 (499) -784-684-46</a>
+    </div>
   </footer>
   <script src="js/script.min.js"></script>
 </body>
