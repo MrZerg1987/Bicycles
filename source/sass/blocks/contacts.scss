@@ -8,7 +8,7 @@
   }
 
   @media (max-width: $mobile-width) {
-    padding-bottom: 51px;
+    padding: 0 0 51px;
   }
 }
 
@@ -38,6 +38,10 @@
   @media (max-width: $tablet-width) {
     width: 100%;
     padding: 0 69px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 0 16px;
   }
 }
 
@@ -96,6 +100,7 @@
 
   @media (max-width: $mobile-width) {
     margin: 0 auto;
+
 
   }
 }

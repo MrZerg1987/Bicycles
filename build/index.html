@@ -54,7 +54,7 @@
           <input type="text" name="name" placeholder="Введите Ваше Имя" required="">
         </label>
         <label>
-          <input type="tel" name="tel" placeholder="Введите Ваш номер телефона" required="">
+          <input type="tel" name="phone" placeholder="Введите Ваш номер телефона" required="" pattern="[\+]\d{1}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" minlength="12" maxlength="18" title="Только номер телефона в формате '+7 (123) 456-78-91'">
         </label>
         <button type="submit" class="form__button-submit">
           Подобрать велосипед мечты
@@ -76,6 +76,107 @@
       </li>
       <li class="about__item">
         Профессиональные консультации!
+      </li>
+    </ul>
+  </section>
+  <section id="types" class="types">
+    <h2 class="types__title">Виды велосипедов</h2>
+    <ul class="types__list">
+      <li class="types__item">
+        <a href="#" class="types__link">
+          <picture class="types__picture">
+            <source type="image/webp" media="(max-width: 767px)" srcset="
+                  img/content/bicycle-1-mobile-@1x.webp 1x,
+                  img/content/bicycle-1-mobile-@2x.webp 2x
+                ">
+            <source type="image/webp" media="(max-width: 1023px)" srcset="
+                  img/content/bicycle-1-tablet-@1x.webp 1x,
+                  img/content/bicycle-1-tablet-@2x.webp 2x
+                ">
+            <source type="image/webp" srcset="
+                  img/content/bicycle-1-desktop-@1x.webp 1x,
+                  img/content/bicycle-1-desktop-@2x.webp 2x
+                ">
+
+            <source media="(max-width: 767px)" srcset="
+                  img/content/bicycle-1-mobile-@1x.jpg 1x,
+                  img/content/bicycle-1-mobile-@2x.jpg 2x
+                ">
+            <source media="(max-width: 1023px)" srcset="
+                  img/content/bicycle-1-tablet-@1x.jpg 1x,
+                  img/content/bicycle-1-tablet-@2x.jpg 2x
+                ">
+            <img src="img/content/bicycle-1-desktop-@1x.jpg" srcset="
+                  img/content/bicycle-1-desktop-@1x.jpg 1x,
+                  img/content/bicycle-1-desktop-@2x.jpg 2x
+                " alt="Фотография дорожного велосипеда" width="342" height="503">
+          </picture>
+          <span class="types__description">Дорожный велосипед</span>
+        </a>
+      </li>
+      <li class="types__item">
+        <a href="#" class="types__link">
+          <picture class="types__picture">
+            <source type="image/webp" media="(max-width: 767px)" srcset="
+                  img/content/bicycle-2-mobile-@1x.webp 1x,
+                  img/content/bicycle-2-mobile-@2x.webp 2x
+                ">
+            <source type="image/webp" media="(max-width: 1023px)" srcset="
+                  img/content/bicycle-2-tablet-@1x.webp 1x,
+                  img/content/bicycle-2-tablet-@2x.webp 2x
+                ">
+            <source type="image/webp" srcset="
+                  img/content/bicycle-2-desktop-@1x.webp 1x,
+                  img/content/bicycle-2-desktop-@2x.webp 2x
+                ">
+
+            <source media="(max-width: 767px)" srcset="
+                  img/content/bicycle-2-mobile-@1x.jpg 1x,
+                  img/content/bicycle-2-mobile-@2x.jpg 2x
+                ">
+            <source media="(max-width: 1023px)" srcset="
+                  img/content/bicycle-2-tablet-@1x.jpg 1x,
+                  img/content/bicycle-2-tablet-@2x.jpg 2x
+                ">
+            <img src="img/content/bicycle-2-desktop-@1x.jpg" srcset="
+                  img/content/bicycle-2-desktop-@1x.jpg 1x,
+                  img/content/bicycle-2-desktop-@2x.jpg 2x
+                " alt="Фотография горного велосипеда" width="342" height="566">
+          </picture>
+          <span class="types__description">Горный велосипед</span>
+        </a>
+      </li>
+      <li class="types__item">
+        <a href="#" class="types__link">
+          <picture class="types__picture">
+            <source type="image/webp" media="(max-width: 767px)" srcset="
+                  img/content/bicycle-3-mobile-@1x.webp 1x,
+                  img/content/bicycle-3-mobile-@2x.webp 2x
+                ">
+            <source type="image/webp" media="(max-width: 1023px)" srcset="
+                  img/content/bicycle-3-tablet-@1x.webp 1x,
+                  img/content/bicycle-3-tablet-@2x.webp 2x
+                ">
+            <source type="image/webp" srcset="
+                  img/content/bicycle-3-desktop-@1x.webp 1x,
+                  img/content/bicycle-3-desktop-@2x.webp 2x
+                ">
+
+            <source media="(max-width: 767px)" srcset="
+                  img/content/bicycle-3-mobile-@1x.jpg 1x,
+                  img/content/bicycle-3-mobile-@2x.jpg 2x
+                ">
+            <source media="(max-width: 1023px)" srcset="
+                  img/content/bicycle-3-tablet-@1x.jpg 1x,
+                  img/content/bicycle-3-tablet-@2x.jpg 2x
+                ">
+            <img src="img/content/bicycle-3-desktop-@1x.jpg" srcset="
+                  img/content/bicycle-3-desktop-@1x.jpg 1x,
+                  img/content/bicycle-3-desktop-@2x.jpg 2x
+                " alt="Фотография детского велосипеда" width="342" height="513">
+          </picture>
+          <span class="types__description">Детский велосипед</span>
+        </a>
       </li>
     </ul>
   </section>
