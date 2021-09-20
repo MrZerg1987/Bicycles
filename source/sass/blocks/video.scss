@@ -1,0 +1,127 @@
+.video {
+  width: 100%;
+  margin-bottom: 98px;
+  padding-top: 120px;
+
+  text-align: center;
+
+  background-color: $color-background-black;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 85px;
+    padding-top: 70px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 49px;
+    padding: 84px 16px 0;
+  }
+}
+
+.video__title {
+  margin: 0;
+  margin-bottom: 20px;
+
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 30px;
+  color: $color-white;
+
+  @media (max-width: $tablet-width) {
+    font-size: 24px;
+  }
+}
+
+.video__description {
+  width: 340px;
+  margin: 0 auto;
+  margin-bottom: 56px;
+
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+  color: $color-white-opacity-70;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 40px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+    margin-bottom: 50px;
+
+    font-size: 15px;
+  }
+}
+
+.video__picture {
+  position: relative;
+
+  display: flex;
+}
+
+.video__picture-preview {
+  max-width: 929px;
+  margin: 0 auto -98px;
+
+  @media (max-width: $tablet-width) {
+    min-width: 503px;
+    margin: 0 auto -85px;
+  }
+
+  @media (max-width: $mobile-width) {
+    min-width: 288px;
+    margin: 0 auto -49px;
+  }
+}
+
+.video__play {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+
+  display: flex;
+  width: 65px;
+  height: 65px;
+  padding: 24px 23px 23px 29px;
+
+  background-color: $color-turquoise;
+  border-radius: 50%;
+  transform: translateX(-50%);
+
+  &:hover {
+    box-shadow: inset 0 0 5px 1px $color-white;
+  }
+
+  &:active {
+    box-shadow: inset 0 0 6px 3px $color-white;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 90px;
+    height: 90px;
+    padding: 32px 32px 32px 39px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 65px;
+    height: 65px;
+    padding: 24px 23px 23px 29px;
+  }
+}
+
+.video__play-img {
+  display: flex;
+  width: 13px;
+  height: 18px;
+
+  @media (max-width: $tablet-width) {
+    width: 19px;
+    height: 26px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 13px;
+    height: 18px;
+  }
+}

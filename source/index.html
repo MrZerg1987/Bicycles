@@ -183,6 +183,49 @@
       </li>
     </ul>
   </section>
+  <section id="video" class="video">
+    <h2 class="video__title">Видео про велосипеды</h2>
+    <p class="video__description">В этом видео мы подробно расскажем про особенности выбора велосипеда для себя. </p>
+    <picture class="video__picture">
+      <source type="image/webp" media="(max-width: 767px)" srcset="
+            img/content/video-mobile-@1x.webp 1x,
+            img/content/video-mobile-@2x.webp 2x
+          " />
+      <source type="image/webp" media="(max-width: 1023px)" srcset="
+            img/content/video-tablet-@1x.webp 1x,
+            img/content/video-tablet-@2x.webp 2x
+          " />
+      <source type="image/webp" srcset="
+            img/content/video-desktop-@1x.webp 1x,
+            img/content/video-desktop-@2x.webp 2x
+          " />
+
+      <source media="(max-width: 767px)" srcset="
+            img/content/video-mobile-@1x.jpg 1x,
+            img/content/video-mobile-@2x.jpg 2x
+          " />
+      <source media="(max-width: 1023px)" srcset="
+            img/content/video-tablet-@1x.jpg 1x,
+            img/content/video-tablet-@2x.jpg 2x
+          " />
+      <img class="video__picture-preview" src="img/content/video-desktop-@1x.jpg" srcset="
+            img/content/video-desktop-@1x.jpg 1x,
+            img/content/video-desktop-@2x.jpg 2x
+          " alt="Превью видео о велосипедах" width="929" height="522" />
+      <a href="#" class="video__play">
+        <picture>
+          <source media="(max-width: 767px)" srcset="
+            img/svg/play-mobile.svg
+          " />
+          <source media="(max-width: 1023px)" srcset="
+            img/svg/play-tablet.svg
+          " />
+          <img class="video__play-img" width="14" height="19" src="img/svg/play-desktop.svg"
+            alt="Кнопка запуска воспроизведения видео про велосипеды" />
+        </picture>
+      </a>
+    </picture>
+  </section>
   <footer id="contacts" class="contacts">
     <h2 class="contacts__title">Как нас найти?</h2>
     <p class="contacts__description">

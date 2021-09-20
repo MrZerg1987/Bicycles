@@ -1,25 +1,26 @@
 .header {
+  position: relative;
+
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: relative;
   margin: 0 auto;
   padding: 12px 75px 0;
 
   @media (max-width: $tablet-width) {
-    padding: 0;
     width: 100%;
+    padding: 0;
   }
 }
 
 .header__logo {
   position: absolute;
-  left: 75px;
   top: 318px;
+  left: 75px;
 
   @media (max-width: $tablet-width) {
-    left: 21px;
     top: auto;
     bottom: -45px;
+    left: 21px;
   }
 }

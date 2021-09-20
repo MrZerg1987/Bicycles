@@ -149,8 +149,8 @@
       &::before {
         content: "";
         position: absolute;
-        right: -25px;
         top: -20px;
+        right: -25px;
 
         width: 68px;
         height: 68px;
@@ -170,6 +170,8 @@
 }
 
 .types__picture {
+  width: 100%;
+
   img {
     border-radius: 10px;
 

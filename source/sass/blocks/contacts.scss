@@ -1,18 +1,20 @@
 .contacts {
   width: 100%;
   margin: 0 auto;
+  padding-top: 150px;
   padding-bottom: 96px;
 
   @media (max-width: $tablet-width) {
-    padding: 0 35px 53px;
+    padding: 70px 35px 53px;
   }
 
   @media (max-width: $mobile-width) {
-    padding: 0 0 51px;
+    padding: 70px 0 51px;
   }
 }
 
 .contacts__title {
+  margin: 0;
   margin-bottom: 30px;
 
   font-weight: 600;
@@ -51,8 +53,8 @@
     margin: 0 auto 38px;
 
     @media (max-width: $tablet-width) {
-      max-width: 100%;
       min-width: 698px;
+      max-width: 100%;
     }
 
     @media (max-width: $mobile-width) {
@@ -72,18 +74,22 @@
   }
 
   @media (max-width: $mobile-width) {
-    padding: 0 22px;
     flex-direction: column;
+    padding: 0 22px;
   }
 }
 
 .contacts__mail {
-  font-size: 16px;
-  line-height: 22px;
   display: flex;
   align-items: center;
 
+  font-size: 16px;
+  line-height: 22px;
   color: $color-black-opacity-50;
+
+  &:hover {
+    color: $color-turquoise;
+  }
 
   @media (max-width: $mobile-width) {
     margin: 0 auto 22px;
@@ -91,16 +97,18 @@
 }
 
 .contacts__phone {
-  font-size: 16px;
-  line-height: 22px;
   display: flex;
   align-items: center;
 
+  font-size: 16px;
+  line-height: 22px;
   color: $color-black-opacity-50;
+
+  &:hover {
+    color: $color-turquoise;
+  }
 
   @media (max-width: $mobile-width) {
     margin: 0 auto;
-
-
   }
 }
