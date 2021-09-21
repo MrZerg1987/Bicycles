@@ -2,13 +2,17 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 873px;
+  width: 880px;
   margin: -15px auto 240px;
 
   @media (max-width: $tablet-width) {
     flex-direction: column;
     width: 100%;
-    margin: 0 auto 70px;
+    margin: 0 auto 35px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin: 0 auto 39px;
   }
 }
 
@@ -92,6 +96,6 @@
   @media (max-width: $mobile-width) {
     width: 100%;
     margin: 0 auto 70px;
-    padding: 0 16px;
+    padding: 0 13px;
   }
 }

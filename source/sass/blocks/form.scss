@@ -1,42 +1,52 @@
 .form {
   width: 327px;
 
-  input {
-    width: 327px;
-    margin-bottom: 20px;
-    padding: 10px 30px;
-
-    border-radius: 6px;
-
-    &::placeholder {
-      font-size: 14px;
-      line-height: 24px;
-      color: $color-special-black;
-
-      opacity: 0.5;
-    }
-
-    @media (max-width: $tablet-width) {
-      width: 100%;
-      padding: 10px 20px;
-    }
-  }
-
   @media (max-width: $tablet-width) {
-    width: 320px;
+    width: 363px;
     margin: 0 auto;
     padding: 0 21px;
   }
 
   @media (max-width: $mobile-width) {
-    width: 288px;
+    max-width: 363px;
+    width: 100%;
     padding: 0 16px;
+  }
+
+  input {
+    width: 327px;
+    margin-bottom: 18px;
+    padding: 14px 27px;
+
+    border-radius: 6px;
+
+    &::placeholder {
+      font-size: 15px;
+      line-height: 24px;
+      color: $color-special-black;
+
+
+      opacity: 0.5;
+    }
+
+    @media (max-width: $tablet-width) {
+      max-width: 327px;
+      width: 100%;
+      padding: 13px 20px;
+      letter-spacing: normal;
+
+      margin-bottom: 19px;
+    }
+
+    @media (max-width: $mobile-width) {
+      padding: 13px 24px;
+    }
   }
 }
 
 .form__description {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 
   font-weight: 600;
   font-size: 17px;
@@ -44,28 +54,35 @@
   text-align: center;
   color: $color-white;
 
+  letter-spacing: -0.005em;
+
   @media (max-width: $tablet-width) {
     margin-top: 70px;
     margin-bottom: 30px;
+    font-size: 18px;
 
     color: $color-black;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 20px;
   }
 }
 
 .form__button-submit {
   display: flex;
-  align-items: center;
-  padding: 9px 65px;
+  padding: 14px 20px;
 
   font-weight: 600;
-  font-size: 13px;
+  font-size: 15px;
   line-height: 21px;
-  text-align: center;
   color: $color-black;
 
   background-color: $color-turquoise;
   border-radius: 6px;
   cursor: pointer;
+  width: 327px;
+  justify-content: center;
 
   &:hover {
     opacity: 0.9;
@@ -76,10 +93,12 @@
   }
 
   @media (max-width: $tablet-width) {
-    padding: 9px 41px;
+    padding: 15px 20px;
   }
 
   @media (max-width: $mobile-width) {
-    padding: 9px 30px;
+    max-width: 363px;
+    width: 100%;
+    padding: 13px 20px;
   }
 }
