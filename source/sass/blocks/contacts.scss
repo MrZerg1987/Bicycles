@@ -15,7 +15,7 @@
 
 .contacts__title {
   margin: 0 auto;
-  margin-bottom: 30px;
+  margin-bottom: 29px;
   max-width: 600px;
 
   font-weight: 600;
@@ -78,6 +78,7 @@
   justify-content: space-between;
   grid-template-columns: max-content max-content;
   grid-column-gap: 80px;
+  grid-row-gap: 20px;
   justify-content: space-between;
   max-width: 565px;
   margin: 38px auto 0;
@@ -100,6 +101,7 @@
 .contacts__item {
   padding: 3px 0 0;
   margin: 0;
+  max-width: 268px;
 
   font-size: 16px;
   line-height: 22px;
@@ -140,11 +142,11 @@
   display: flex;
 
   svg {
-    margin: -3px 13px 0 6px;
+    margin-right: 15px;
     padding-bottom: 6px;
 
     @media (max-width: $mobile-width) {
-      margin: -3px 10px 0 0px;
+      margin-right: 15px;
     }
   }
 

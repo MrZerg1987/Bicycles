@@ -1,5 +1,6 @@
 .form {
   width: 327px;
+  padding-top: 4px;
 
   @media (max-width: $tablet-width) {
     width: 363px;
@@ -46,7 +47,7 @@
 
 .form__description {
   margin: 0;
-  margin-bottom: 18px;
+  margin-bottom: 19px;
 
   font-weight: 600;
   font-size: 17px;
@@ -71,7 +72,8 @@
 
 .form__button-submit {
   display: flex;
-  padding: 14px 20px;
+  margin-bottom: 18px;
+  padding: 14px 27px;
 
   font-weight: 600;
   font-size: 15px;

@@ -17,27 +17,24 @@
   <title>Велосипеды</title>
 </head>
 
-<body class="body">
+<body>
   <div class="intro">
     <header class="header">
       <h1 class="visually-hidden">Интернет-магазин по продаже велосипедов</h1>
-      <a class="header__logo">
-        <img width="68" height="20" src="img/svg/logo.svg" alt="Логотип компании по продаже велосипедов" />
-      </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle main-nav__toggle--close main-nav__toggle--no-js" type="button"
+        <button class="main-nav__toggle toggle-close toggle-no-js" type="button"
           aria-label="Открыть/закрыть меню"></button>
-        <ul class="main-nav__list main-nav__list--no-js">
+        <ul class="main-nav__list nav-no-js">
           <li class="main-nav__item">
-            <a href="#about" class="main-nav__link">О нас</a>
+            <a class="main-nav__link" href="#about">О нас</a>
           </li>
           <li class="main-nav__item">
-            <a href="#types" class="main-nav__link">Виды велосипедов</a>
+            <a class="main-nav__link js-trigger" href="#types">Виды велосипедов</a>
           </li>
           <li class="main-nav__item">
-            <a href="#video" class="main-nav__link">Видео про велосипеды</a>
+            <a class="main-nav__link js-trigger" href="#video">Видео про велосипеды</a>
           </li>
-          <li class="main-nav__item">
+          <li class="main-nav__item js-trigger">
             <a href="#contacts" class="main-nav__link">Контакты</a>
           </li>
         </ul>
@@ -46,13 +43,17 @@
     <section class="main-block">
       <h2 class="visually-hidden">Раздел с формой обратной связи</h2>
       <div class="main-block__first-block">
+        <a class="main-block__logo">
+          <img width="68" height="20" src="img/svg/logo.svg" alt="Логотип компании по продаже велосипедов" />
+        </a>
         <h3 class="main-block__title">Мы продаем велосипеды</h3>
         <p class="main-block__description">Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
       </div>
       <form class="form" method="GET" action="https://echo.htmlacademy.ru">
         <p class="form__description">Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
         <label>
-          <input type="text" name="name" placeholder="Введите Ваше Имя" required />
+          <input type="text" name="name" placeholder="Введите Ваше Имя" required pattern="^[A-Za-zА-Яа-яЁё\s]+$"
+            title="Только текстовый ввод" />
         </label>
         <label>
           <input type="tel" name="phone" placeholder="Введите Ваш номер телефона" required
@@ -70,19 +71,19 @@
     <ul class="about__list">
       <li class="about__item">
         <span>01</span>
-        Самый широкий выбор велосипедов!
+        <p>Самый широкий выбор велосипедов!</p>
       </li>
       <li class="about__item">
         <span>02</span>
-        Доставка велосипедов по всей России!
+        <p>Доставка велосипедов по всей России!</p>
       </li>
       <li class="about__item">
         <span>03</span>
-        Большой выбор крутых аксессуаров!
+        <p>Большой выбор крутых аксессуаров!</p>
       </li>
       <li class="about__item">
         <span>04</span>
-        Профессиональные консультации!
+        <p>Профессиональные консультации!</p>
       </li>
     </ul>
   </section>
@@ -92,7 +93,7 @@
       <li class="types__item">
         <a href="#" class="types__link">
           <div class="types__link-picture">
-            <picture class="types__picture">
+            <picture>
               <source type="image/webp" media="(max-width: 767px)" srcset="
                     img/content/bicycle-1-mobile-@1x.webp 1x,
                     img/content/bicycle-1-mobile-@2x.webp 2x
@@ -126,7 +127,7 @@
       <li class="types__item">
         <a href="#" class="types__link">
           <div class="types__link-picture">
-            <picture class="types__picture">
+            <picture>
               <source type="image/webp" media="(max-width: 767px)" srcset="
                     img/content/bicycle-2-mobile-@1x.webp 1x,
                     img/content/bicycle-2-mobile-@2x.webp 2x
@@ -160,7 +161,7 @@
       <li class="types__item">
         <a href="#" class="types__link">
           <div class="types__link-picture">
-            <picture class="types__picture">
+            <picture>
               <source type="image/webp" media="(max-width: 767px)" srcset="
                     img/content/bicycle-3-mobile-@1x.webp 1x,
                     img/content/bicycle-3-mobile-@2x.webp 2x
@@ -224,7 +225,7 @@
               img/content/video-desktop-@2x.jpg 2x
             " alt="Превью видео о велосипедах" width="929" height="522" />
       </picture>
-      <a href="#" class="video__play">
+      <a class="video__play" href="#">
         <picture>
           <source media="(max-width: 767px)" srcset="
             img/svg/play-mobile.svg
@@ -243,44 +244,46 @@
     <p class="contacts__description">
       Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19
     </p>
-    <picture class="contacts__map">
-      <source type="image/webp" media="(max-width: 767px)" srcset="
-            img/content/map-mobile-@1x.webp 1x,
-            img/content/map-mobile-@2x.webp 2x
-          " />
-      <source type="image/webp" media="(max-width: 1023px)" srcset="
-            img/content/map-tablet-@1x.webp 1x,
-            img/content/map-tablet-@2x.webp 2x
-          " />
-      <source type="image/webp" srcset="
-            img/content/map-desktop-@1x.webp 1x,
-            img/content/map-desktop-@2x.webp 2x
-          " />
+    <div class="contacts__map">
+      <picture>
+        <source type="image/webp" media="(max-width: 767px)" srcset="
+              img/content/map-mobile-@1x.webp 1x,
+              img/content/map-mobile-@2x.webp 2x
+            " />
+        <source type="image/webp" media="(max-width: 1023px)" srcset="
+              img/content/map-tablet-@1x.webp 1x,
+              img/content/map-tablet-@2x.webp 2x
+            " />
+        <source type="image/webp" srcset="
+              img/content/map-desktop-@1x.webp 1x,
+              img/content/map-desktop-@2x.webp 2x
+            " />
 
-      <source media="(max-width: 767px)" srcset="
-            img/content/map-mobile-@1x.png 1x,
-            img/content/map-mobile-@2x.png 2x
-          " />
-      <source media="(max-width: 1023px)" srcset="
-            img/content/map-tablet-@1x.png 1x,
-            img/content/map-tablet-@2x.png 2x
-          " />
-      <img src="img/content/map-desktop-@1x.png" srcset="
-            img/content/map-desktop-@1x.png 1x,
-            img/content/map-desktop-@2x.png 2x
-          " alt="Карта компании по продаже велосипедов с адресом: Санкт-Петербург, ул. Большая Конюшенная, д. 19"
-        width="957" height="530" />
-    </picture>
+        <source media="(max-width: 767px)" srcset="
+              img/content/map-mobile-@1x.png 1x,
+              img/content/map-mobile-@2x.png 2x
+            " />
+        <source media="(max-width: 1023px)" srcset="
+              img/content/map-tablet-@1x.png 1x,
+              img/content/map-tablet-@2x.png 2x
+            " />
+        <img src="img/content/map-desktop-@1x.png" srcset="
+              img/content/map-desktop-@1x.png 1x,
+              img/content/map-desktop-@2x.png 2x
+            " alt="Карта компании по продаже велосипедов с адресом: Санкт-Петербург, ул. Большая Конюшенная, д. 19"
+          width="957" height="530" />
+      </picture>
+    </div>
     <ul class="contacts__list">
       <li class="contacts__item">
-        <a href="mailto:puteshestviemechta@gmail.ru" class="contacts__mail" aria-label="Открыть электронную почту"><svg
+        <a class="contacts__mail" href="mailto:puteshestviemechta@gmail.ru" aria-label="Открыть электронную почту"><svg
             width="26" height="20">
             <use xlink:href="img/svg/sprite_auto.svg#icon-mail"></use>
           </svg>puteshestviemechta@gmail.ru
         </a>
       </li>
       <li class="contacts__item">
-        <a href="tel:+749978468446" class="contacts__phone" aria-label="Позвонить в компанию Way">
+        <a class="contacts__phone" href="tel:+749978468446" aria-label="Позвонить в компанию Way">
           <svg width="30" height="30">
             <use xlink:href="img/svg/sprite_auto.svg#icon-phone"></use>
           </svg>+7 (499) -784-684-46</a>

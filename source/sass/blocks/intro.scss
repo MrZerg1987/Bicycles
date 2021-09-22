@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   width: 100%;
+  padding-top: 13px;
 
   background-color: $color-black;
   background-image: url("../img/content/background-desktop-@1x.jpg");
@@ -16,6 +17,7 @@
 
   @media (max-width: $tablet-width) {
     min-width: 768px;
+    padding: 0;
 
     background-color: $color-white;
     background-image: none;

@@ -1,0 +1,10 @@
+.nav-no-js {
+  @media (max-width: $tablet-width) {
+    position: relative;
+    width: 100%;
+  }
+}
+
+.toggle-no-js {
+  display: none;
+}

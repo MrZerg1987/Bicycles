@@ -29,6 +29,14 @@ gulp.task("css", function () {
     .pipe(server.stream());
 });
 
+gulp.task("scripts", function () {
+  return gulp.src("source/js/main.js")
+    .pipe(terser())
+    .pipe(rename("main.min.js"))
+    .pipe(gulp.dest("build/js"))
+    .pipe(sync.stream());
+});
+
 gulp.task("server", function () {
   server.init({
     server: "build/",

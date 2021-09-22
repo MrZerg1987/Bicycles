@@ -1,6 +1,6 @@
 .types {
   width: 100%;
-  padding: 149px 25px 108px;
+  padding: 149px 25px 129px;
 
   background: $color-background-dark-grey;
 
@@ -33,20 +33,25 @@
 
 .types__list {
   position: relative;
-
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 342px);
+  grid-column-gap: 50px;
+  grid-row-gap: 25px;
   justify-content: center;
   max-width: 1176px;
   margin: 0 auto;
   padding: 0;
 
   list-style: none;
+
+
+  @media (max-width: 1226px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .types__item {
-  margin: 0 25px 20px;
-
   @media (max-width: $tablet-width) {
     margin: 0 22px 27px;
   }
@@ -184,7 +189,7 @@
   }
 }
 
-.types__picture {
+.types__link-picture {
   width: 100%;
 
   img {
