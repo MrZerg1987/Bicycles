@@ -1,7 +1,6 @@
 .main-nav {
   display: flex;
   width: 100%;
-  position: relative;
 
   font-weight: 300;
   font-size: 16px;
@@ -40,7 +39,7 @@
     right: 0;
     z-index: 1;
     grid-row-gap: 30px;
-    grid-template-rows: repeat(4, 60px);
+    grid-template-rows: repeat(10, 60px);
 
     padding: 0;
     padding-top: 100px;
@@ -117,6 +116,7 @@
     background-color: transparent;
     background-image: url("../img/svg/close.svg");
     background-repeat: no-repeat;
+    background-position: center;
     border: 0;
     cursor: pointer;
   }

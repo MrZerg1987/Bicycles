@@ -16,7 +16,6 @@
   }
 
   @media (max-width: $tablet-width) {
-    min-width: 768px;
     padding: 0;
 
     background-color: $color-white;
@@ -24,7 +23,6 @@
   }
 
   @media (max-width: $mobile-width) {
-    min-width: 320px;
-    padding: 0;
+    width: 320px;
   }
 }
