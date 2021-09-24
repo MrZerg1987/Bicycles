@@ -1,0 +1,39 @@
+.check-input {
+  box-shadow: 0 0 2px 2px $color-red;
+}
+
+.page {
+  height: 100%;
+}
+
+.page-body {
+  display: grid;
+  align-content: start;
+  min-height: 100%;
+
+  font-style: normal;
+  font-weight: 400;
+  font-family: $font-family--open-sans;
+  color: $color-black;
+  letter-spacing: -0.01em;
+
+  grid-template-rows: min-content 1fr min-content;
+}
+
+.nav-no-js {
+  @media (max-width: $tablet-width) {
+    position: relative;
+
+    width: 100%;
+  }
+}
+
+.toggle-no-js {
+  display: none;
+}
+
+.list-close {
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+}

@@ -46,7 +46,6 @@
   grid-row-gap: 25px;
   grid-template-columns: repeat(3, 342px);
 
-
   @media (max-width: 1226px) {
     display: flex;
     flex-wrap: wrap;
@@ -61,125 +60,125 @@
   @media (max-width: 570px) {
     margin: 0 0 20px;
   }
+}
 
-  &:nth-child(3n+1) {
-    z-index: 1;
+.types__item:nth-child(3n + 1) {
+  z-index: 1;
 
-    margin-top: 10px;
+  margin-top: 10px;
 
-    @media (max-width: $tablet-width) {
-      margin-top: 0;
-    }
+  @media (max-width: $tablet-width) {
+    margin-top: 0;
+  }
 
-    @media (max-width: 1226px) {
-      margin-top: 0;
-    }
+  @media (max-width: 1226px) {
+    margin-top: 0;
+  }
 
-    .types__link-picture {
-      position: relative;
+  .types__link-picture {
+    position: relative;
 
-      &::before {
-        content: "";
-        position: absolute;
-        top: 155px;
-        left: -60px;
-        z-index: -1;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 155px;
+      left: -60px;
+      z-index: -1;
 
-        width: 180px;
-        height: 180px;
+      width: 180px;
+      height: 180px;
 
-        background-image: url("../img/svg/ellipse.svg");
-        background-size: contain;
+      background-image: url("../img/svg/ellipse.svg");
+      background-size: contain;
 
-        @media (max-width: $tablet-width) {
-          top: 200px;
-          left: -36px;
+      @media (max-width: $tablet-width) {
+        top: 200px;
+        left: -36px;
 
-          width: 127px;
-          height: 127px;
-        }
+        width: 127px;
+        height: 127px;
+      }
 
-        @media (max-width: $mobile-width) {
-          top: 202px;
-          left: -20px;
-        }
+      @media (max-width: $mobile-width) {
+        top: 202px;
+        left: -20px;
       }
     }
   }
+}
 
-  &:nth-child(3n+2) {
-    margin-top: 39px;
+.types__item:nth-child(3n + 2) {
+  margin-top: 39px;
 
-    @media (max-width: 1226px) {
-      margin-top: 0;
+  @media (max-width: 1226px) {
+    margin-top: 0;
+  }
+
+  .types__link-picture {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -18px;
+      left: -19px;
+
+      width: 47px;
+      height: 47px;
+
+      background-image: url("../img/svg/rectangle.svg");
+      background-size: contain;
+
+      @media (max-width: $tablet-width) {
+        display: none;
+      }
     }
 
-    .types__link-picture {
-      position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      right: -23px;
+      bottom: -23px;
 
-      &::before {
-        content: "";
-        position: absolute;
-        top: -18px;
-        left: -19px;
+      width: 47px;
+      height: 47px;
 
-        width: 47px;
-        height: 47px;
+      background-image: url("../img/svg/rectangle.svg");
+      background-size: contain;
 
-        background-image: url("../img/svg/rectangle.svg");
-        background-size: contain;
-
-        @media (max-width: $tablet-width) {
-          display: none;
-        }
-      }
-
-      &::after {
-        content: "";
-        position: absolute;
-        right: -23px;
-        bottom: -23px;
-
-        width: 47px;
-        height: 47px;
-
-        background-image: url("../img/svg/rectangle.svg");
-        background-size: contain;
-
-        @media (max-width: $tablet-width) {
-          display: none;
-        }
+      @media (max-width: $tablet-width) {
+        display: none;
       }
     }
   }
+}
 
-  &:nth-child(3n+3) {
-    .types__link-picture {
-      position: relative;
+.types__item:nth-child(3n + 3) {
+  .types__link-picture {
+    position: relative;
 
-      &::after {
-        content: "";
-        position: absolute;
-        top: -31px;
-        right: -36px;
+    &::after {
+      content: "";
+      position: absolute;
+      top: -31px;
+      right: -36px;
 
-        width: 95px;
-        height: 95px;
+      width: 95px;
+      height: 95px;
 
-        background-image: url("../img/svg/small-ellipse.svg");
-        background-size: contain;
+      background-image: url("../img/svg/small-ellipse.svg");
+      background-size: contain;
 
-        @media (max-width: $tablet-width) {
-          top: -20px;
-          right: -25px;
+      @media (max-width: $tablet-width) {
+        top: -20px;
+        right: -25px;
 
-          width: 68px;
-          height: 68px;
-        }
+        width: 68px;
+        height: 68px;
+      }
 
-        @media (max-width: $mobile-width) {
-          right: -14px;
-        }
+      @media (max-width: $mobile-width) {
+        right: -14px;
       }
     }
   }
