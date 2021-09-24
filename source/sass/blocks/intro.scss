@@ -1,7 +1,7 @@
 .intro {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 100vw;
   padding-top: 13px;
 
   background-color: $color-black;
@@ -10,8 +10,7 @@
   background-position: center center;
   background-size: cover;
 
-  @media (min-resolution: 144dpi),
-  (min-resolution: 1.5dppx) {
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     background-image: url("../img/content/background-desktop-@2x.jpg");
   }
 
@@ -20,9 +19,5 @@
 
     background-color: $color-white;
     background-image: none;
-  }
-
-  @media (max-width: $mobile-width) {
-    width: 320px;
   }
 }

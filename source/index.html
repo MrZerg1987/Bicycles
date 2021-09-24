@@ -23,7 +23,7 @@
     <header class="header">
       <h1 class="visually-hidden">Интернет-магазин по продаже велосипедов</h1>
       <nav class="main-nav">
-        <button class="main-nav__toggle toggle-close toggle-no-js" type="button"
+        <button class="main-nav__toggle main-nav__toggle-close toggle-no-js" type="button"
           aria-label="Открыть/закрыть меню"></button>
         <ul class="main-nav__list nav-no-js">
           <li class="main-nav__item">
@@ -36,7 +36,7 @@
             <a class="main-nav__link js-trigger" href="#video">Видео про велосипеды</a>
           </li>
           <li class="main-nav__item js-trigger">
-            <a href="#contacts" class="main-nav__link">Контакты</a>
+            <a class="main-nav__link" href="#contacts">Контакты</a>
           </li>
         </ul>
       </nav>
@@ -50,24 +50,26 @@
         <h3 class="main-block__title">Мы продаем велосипеды</h3>
         <p class="main-block__description">Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
       </div>
-      <form class="form" method="GET" action="https://echo.htmlacademy.ru">
-        <p class="form__description">Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
-        <label>
-          <input type="text" name="name" placeholder="Введите Ваше Имя" required pattern="^[A-Za-zА-Яа-яЁё\s]+$"
-            title="Только текстовый ввод" />
-        </label>
-        <label>
-          <input type="tel" name="phone" placeholder="Введите Ваш номер телефона" required
-            pattern="[\+]\d{1}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" minlength="12" maxlength="18"
-            title="Только номер телефона в формате '+7 (123) 456-78-91'" />
-        </label>
-        <button type="submit" class="form__button-submit">
-          Подобрать велосипед мечты
-        </button>
-      </form>
+      <div class="form">
+        <form method="GET" action="https://echo.htmlacademy.ru">
+          <p class="form__description">Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
+          <label>
+            <input type="text" name="name" placeholder="Введите Ваше Имя" required pattern="^[A-Za-zА-Яа-яЁё\s]+$"
+              title="Только текстовый ввод" />
+          </label>
+          <label>
+            <input type="tel" name="phone" placeholder="Введите Ваш номер телефона" required
+              pattern="[\+]\d{1}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" minlength="12" maxlength="18"
+              title="Только номер телефона в формате '+7 (123) 456-78-91'" />
+          </label>
+          <button class="form__button-submit" type="submit">
+            Подобрать велосипед мечты
+          </button>
+        </form>
+      </div>
     </section>
   </div>
-  <section id="about" class="about">
+  <section class="about" id="about">
     <h2 class="about__title">Несколько фактов о нас</h2>
     <ul class="about__list">
       <li class="about__item">
@@ -88,11 +90,11 @@
       </li>
     </ul>
   </section>
-  <section id="types" class="types">
+  <section class="types" id="types">
     <h2 class="types__title">Виды велосипедов</h2>
     <ul class="types__list">
       <li class="types__item">
-        <a href="#" class="types__link">
+        <a class="types__link" href="#">
           <div class="types__link-picture">
             <picture>
               <source type="image/webp" media="(max-width: 767px)" srcset="
@@ -116,6 +118,7 @@
                     img/content/bicycle-1-tablet-@1x.jpg 1x,
                     img/content/bicycle-1-tablet-@2x.jpg 2x
                   " />
+              <!-- 1х: 342px; 2x: 684px -->
               <img src="img/content/bicycle-1-desktop-@1x.jpg" srcset="
                     img/content/bicycle-1-desktop-@1x.jpg 1x,
                     img/content/bicycle-1-desktop-@2x.jpg 2x
@@ -126,7 +129,7 @@
         </a>
       </li>
       <li class="types__item">
-        <a href="#" class="types__link">
+        <a class="types__link" href="#">
           <div class="types__link-picture">
             <picture>
               <source type="image/webp" media="(max-width: 767px)" srcset="
@@ -150,6 +153,7 @@
                     img/content/bicycle-2-tablet-@1x.jpg 1x,
                     img/content/bicycle-2-tablet-@2x.jpg 2x
                   " />
+              <!-- 1х: 342px; 2x: 684px -->
               <img src="img/content/bicycle-2-desktop-@1x.jpg" srcset="
                     img/content/bicycle-2-desktop-@1x.jpg 1x,
                     img/content/bicycle-2-desktop-@2x.jpg 2x
@@ -160,7 +164,7 @@
         </a>
       </li>
       <li class="types__item">
-        <a href="#" class="types__link">
+        <a class="types__link" href="#">
           <div class="types__link-picture">
             <picture>
               <source type="image/webp" media="(max-width: 767px)" srcset="
@@ -184,6 +188,7 @@
                     img/content/bicycle-3-tablet-@1x.jpg 1x,
                     img/content/bicycle-3-tablet-@2x.jpg 2x
                   " />
+              <!-- 1х: 342px; 2x: 684px -->
               <img src="img/content/bicycle-3-desktop-@1x.jpg" srcset="
                     img/content/bicycle-3-desktop-@1x.jpg 1x,
                     img/content/bicycle-3-desktop-@2x.jpg 2x
@@ -195,7 +200,7 @@
       </li>
     </ul>
   </section>
-  <section id="video" class="video">
+  <section class="video" id="video">
     <h2 class="video__title">Видео про велосипеды</h2>
     <p class="video__description">В этом видео мы подробно расскажем про особенности выбора велосипеда для себя. </p>
     <div class="video__block-video">
@@ -221,6 +226,7 @@
               img/content/video-tablet-@1x.jpg 1x,
               img/content/video-tablet-@2x.jpg 2x
             " />
+        <!-- 1х: 929px; 2x: 1858px -->
         <img class="video__picture-preview" src="img/content/video-desktop-@1x.jpg" srcset="
               img/content/video-desktop-@1x.jpg 1x,
               img/content/video-desktop-@2x.jpg 2x
@@ -240,7 +246,7 @@
       </a>
     </div>
   </section>
-  <footer id="contacts" class="contacts">
+  <footer class="contacts" id="contacts">
     <h2 class="contacts__title">Как нас найти?</h2>
     <p class="contacts__description">
       Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19
@@ -268,6 +274,7 @@
               img/content/map-tablet-@1x.png 1x,
               img/content/map-tablet-@2x.png 2x
             " />
+        <!-- 1х: 957px; 2x: 1914px -->
         <img src="img/content/map-desktop-@1x.png" srcset="
               img/content/map-desktop-@1x.png 1x,
               img/content/map-desktop-@2x.png 2x

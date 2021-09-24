@@ -19,9 +19,9 @@
 }
 
 .video__title {
+  max-width: 600px;
   margin: 0 auto;
   margin-bottom: 20px;
-  max-width: 600px;
 
   font-weight: 600;
   font-size: 30px;
@@ -29,8 +29,9 @@
   color: $color-white;
 
   @media (max-width: $tablet-width) {
-    font-size: 24px;
     margin-bottom: 22px;
+
+    font-size: 24px;
   }
 }
 
@@ -42,11 +43,11 @@
   font-weight: 300;
   font-size: 16px;
   line-height: 28px;
-  color: $color-white-opacity-70;
+  color: rgba($color-white, 0.7);
 
   @media (max-width: $tablet-width) {
-    margin-bottom: 40px;
     width: 450px;
+    margin-bottom: 40px;
   }
 
   @media (max-width: $mobile-width) {
@@ -57,11 +58,10 @@
 
 .video__block-video {
   position: relative;
-  margin: 0 auto;
-
-  max-width: 929px;
 
   display: flex;
+  max-width: 929px;
+  margin: 0 auto;
 
   @media (max-width: $tablet-width) {
     max-width: 503px;
@@ -103,17 +103,19 @@
   }
 
   @media (max-width: $tablet-width) {
+    top: 49%;
+
     width: 90px;
     height: 90px;
     padding: 32px 32px 32px 39px;
-    top: 49%;
   }
 
   @media (max-width: $mobile-width) {
+    top: 44%;
+
     width: 65px;
     height: 65px;
     padding: 24px 23px 23px 29px;
-    top: 44%;
   }
 }
 

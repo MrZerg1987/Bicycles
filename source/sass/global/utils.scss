@@ -11,6 +11,7 @@
 .nav-no-js {
   @media (max-width: $tablet-width) {
     position: relative;
+
     width: 100%;
   }
 }
@@ -19,32 +20,14 @@
   display: none;
 }
 
-.toggle-close {
-  position: absolute;
-  top: 0;
-  right: 0;
-
-  width: 50px;
-  height: 50px;
-
-  background-color: $color-turquoise;
-  background-image: url("../img/svg/menu.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  border: none;
-  cursor: pointer;
-
-  &:hover {
-    opacity: 0.7;
-  }
-
-  @media (max-width: $tablet-width) {
-    display: flex;
-  }
-}
-
 .list-close {
   @media (max-width: $tablet-width) {
     display: none;
   }
+}
+
+.scroll-lock {
+  position: fixed;
+
+  overflow: hidden;
 }

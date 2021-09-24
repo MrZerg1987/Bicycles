@@ -9,8 +9,8 @@
   }
 
   @media (max-width: $mobile-width) {
-    max-width: 363px;
     width: 100%;
+    max-width: 363px;
     padding: 0 16px;
   }
 
@@ -26,17 +26,16 @@
       line-height: 24px;
       color: $color-special-black;
 
-
       opacity: 0.5;
     }
 
     @media (max-width: $tablet-width) {
-      max-width: 327px;
       width: 100%;
-      padding: 13px 20px;
-      letter-spacing: normal;
-
+      max-width: 327px;
       margin-bottom: 19px;
+      padding: 13px 20px;
+
+      letter-spacing: normal;
     }
 
     @media (max-width: $mobile-width) {
@@ -54,14 +53,13 @@
   line-height: 28px;
   text-align: center;
   color: $color-white;
-
-  letter-spacing: -0.005em;
+  letter-spacing: -0.01em;
 
   @media (max-width: $tablet-width) {
     margin-top: 70px;
     margin-bottom: 30px;
-    font-size: 18px;
 
+    font-size: 18px;
     color: $color-black;
   }
 
@@ -72,6 +70,8 @@
 
 .form__button-submit {
   display: flex;
+  justify-content: center;
+  width: 327px;
   margin-bottom: 18px;
   padding: 14px 27px;
 
@@ -83,8 +83,6 @@
   background-color: $color-turquoise;
   border-radius: 6px;
   cursor: pointer;
-  width: 327px;
-  justify-content: center;
 
   &:hover {
     opacity: 0.9;
@@ -99,8 +97,8 @@
   }
 
   @media (max-width: $mobile-width) {
-    max-width: 363px;
     width: 100%;
+    max-width: 363px;
     padding: 13px 20px;
   }
 }

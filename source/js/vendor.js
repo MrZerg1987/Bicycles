@@ -46,7 +46,6 @@ var MoveTo = function () {
     return obj3;
   }
 
-  ;
   /**
    * Converts camel case to kebab case
    * @param  {string} val the value to be converted
@@ -59,7 +58,6 @@ var MoveTo = function () {
     });
   }
 
-  ;
   /**
    * Count a number of item scrolled top
    * @param  {Window|HTMLElement} container
@@ -74,7 +72,6 @@ var MoveTo = function () {
     return container.pageYOffset;
   }
 
-  ;
   /**
    * MoveTo Constructor
    * @param {object} options Options

@@ -24,8 +24,9 @@
   color: $color-special-black;
 
   @media (max-width: $tablet-width) {
-    font-size: 24px;
     margin: 0 0 35px;
+
+    font-size: 24px;
   }
 }
 
@@ -42,8 +43,8 @@
   letter-spacing: -0.5px;
 
   grid-column-gap: 55px;
-  grid-template-columns: repeat(4, 1fr);
   grid-row-gap: 40px;
+  grid-template-columns: repeat(4, 1fr);
 
   @media (max-width: $tablet-width) {
     grid-column-gap: 30px;
@@ -75,7 +76,7 @@
     font-size: 28px;
     line-height: 38px;
     color: $color-turquoise;
-    letter-spacing: -1.27273px;
+    letter-spacing: -1.27px;
 
     @media (max-width: $tablet-width) {
       margin: 0 auto 19px;
@@ -95,7 +96,6 @@
       @media (max-width: $mobile-width) {
         margin: 0 auto 19px;
       }
-
     }
   }
 }
