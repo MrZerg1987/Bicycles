@@ -10,15 +10,15 @@
 
   @media (max-width: $mobile-width) {
     width: 100%;
-    max-width: 363px;
     padding: 0 16px;
   }
 
   input {
-    width: 327px;
+    width: 100%;
     margin-bottom: 18px;
     padding: 14px 27px;
 
+    border: 1px solid $color-border-grey;
     border-radius: 6px;
 
     &::placeholder {
@@ -29,9 +29,13 @@
       opacity: 0.5;
     }
 
+    &:hover,
+    &:focus {
+      outline-color: $color-turquoise;
+      box-shadow: inset 0 0 2px 1px $color-turquoise;
+    }
+
     @media (max-width: $tablet-width) {
-      width: 100%;
-      max-width: 327px;
       margin-bottom: 19px;
       padding: 13px 20px;
 
@@ -71,7 +75,7 @@
 .form__button-submit {
   display: flex;
   justify-content: center;
-  width: 327px;
+  width: 100%;
   margin-bottom: 18px;
   padding: 14px 27px;
 
@@ -81,15 +85,16 @@
   color: $color-black;
 
   background-color: $color-turquoise;
+  border: none;
   border-radius: 6px;
   cursor: pointer;
 
   &:hover {
-    opacity: 0.9;
+    box-shadow: inset 0 0 2px 1px $color-grey;
   }
 
   &:active {
-    opacity: 0.7;
+    opacity: 0.8;
   }
 
   @media (max-width: $tablet-width) {
@@ -97,8 +102,6 @@
   }
 
   @media (max-width: $mobile-width) {
-    width: 100%;
-    max-width: 363px;
     padding: 13px 20px;
   }
 }

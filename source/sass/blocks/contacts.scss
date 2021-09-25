@@ -123,6 +123,14 @@
 .contacts__mail {
   display: flex;
 
+  &:hover {
+    color: $color-turquoise;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin: 13px auto 24px;
+  }
+
   svg {
     margin-right: 15px;
 
@@ -131,14 +139,6 @@
       margin-left: 6px;
     }
   }
-
-  &:hover {
-    color: $color-turquoise;
-  }
-
-  @media (max-width: $mobile-width) {
-    margin: 13px auto 24px;
-  }
 }
 
 .contacts__phone {
@@ -146,11 +146,6 @@
 
   svg {
     margin-right: 15px;
-    padding-bottom: 6px;
-
-    @media (max-width: $mobile-width) {
-      margin-right: 15px;
-    }
   }
 
   &:hover {

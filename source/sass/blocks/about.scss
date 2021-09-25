@@ -1,15 +1,13 @@
 .about {
-  max-width: 1150px;
+  width: 100%;
   margin: 0 auto;
   padding: 149px 0 152px;
 
   @media (max-width: $tablet-width) {
-    max-width: 556px;
     padding: 38px 0 70px;
   }
 
   @media (max-width: $mobile-width) {
-    max-width: 320px;
     padding: 38px 0 82px;
   }
 }
@@ -32,8 +30,9 @@
 
 .about__list {
   display: grid;
+  width: 1226px;
   margin: 0 auto;
-  padding: 0;
+  padding: 0 30px;
 
   list-style: none;
   font-size: 22px;
@@ -47,13 +46,17 @@
   grid-template-columns: repeat(4, 1fr);
 
   @media (max-width: $tablet-width) {
+    width: 600px;
+    padding: 0 22px;
+
     grid-column-gap: 30px;
     grid-row-gap: 39px;
     grid-template-columns: 263px 263px;
   }
 
   @media (max-width: $mobile-width) {
-    width: 263px;
+    width: 320px;
+    padding: 0 28px;
 
     font-size: 18px;
 
