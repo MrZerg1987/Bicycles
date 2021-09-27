@@ -3,7 +3,7 @@
   flex-direction: row;
   justify-content: space-between;
   width: 880px;
-  margin: 0 auto 220px;
+  margin: 0 auto 221px;
 
   @media (max-width: $tablet-width) {
     position: relative;
@@ -14,13 +14,16 @@
   }
 
   @media (max-width: $mobile-width) {
-    margin: 0 auto 39px;
+    margin: 0 auto;
   }
 }
 
 .main-block__first-block {
+  width: 553px;
+
   @media (max-width: $tablet-width) {
-    padding: 0 21px;
+    width: 100%;
+    padding: 135px 21px 80px;
 
     background-color: $color-black;
     background-image: url("../img/content/background-tablet-@1x.jpg");
@@ -32,7 +35,7 @@
     }
 
     @media (max-width: $mobile-width) {
-      padding: 0 16px;
+      padding: 121px 16px 70px;
 
       background-image: url("../img/content/background-mobile-@1x.jpg");
 
@@ -46,19 +49,19 @@
 .main-block__logo {
   display: flex;
   width: 68px;
-  height: 20px;
+  height: 21px;
   margin-bottom: 30px;
 
   @media (max-width: $tablet-width) {
     position: absolute;
-    top: 15px;
+    top: 25px;
     left: 22px;
 
     margin: 0;
   }
 
   @media (max-width: $mobile-width) {
-    left: 18px;
+    left: 17px;
   }
 }
 
@@ -74,8 +77,8 @@
   @media (max-width: $tablet-width) {
     min-width: 525px;
     max-width: 100%;
-    margin: 134px auto 20px;
-    padding: 0 21px;
+    margin: 0 auto;
+    margin-bottom: 20px;
 
     font-size: 30px;
     line-height: 42px;
@@ -84,14 +87,14 @@
 
   @media (max-width: $mobile-width) {
     min-width: 100%;
-    margin: 120px auto 20px;
-    padding: 0 16px;
+    margin: 0 auto 20px;
   }
 }
 
 .main-block__description {
   width: 381px;
   margin: 0;
+  padding: 0;
 
   font-weight: 300;
   font-size: 20px;
@@ -102,8 +105,7 @@
 
   @media (max-width: $tablet-width) {
     width: 435px;
-    margin: 0 auto 80px;
-    padding: 0 21px;
+    margin: 0 auto;
 
     font-weight: 300;
     font-size: 18px;
@@ -113,7 +115,6 @@
 
   @media (max-width: $mobile-width) {
     width: 100%;
-    margin: 0 auto 70px;
-    padding: 0 13px;
+    margin: 0 auto;
   }
 }

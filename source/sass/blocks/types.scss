@@ -1,15 +1,15 @@
 .types {
   width: 100%;
-  padding: 149px 0 129px;
+  padding: 149px 0 132px;
 
   background: $color-background-dark-grey;
 
   @media (max-width: $tablet-width) {
-    padding: 50px 0 22px;
+    padding: 50px 0 48px;
   }
 
   @media (max-width: $mobile-width) {
-    padding: 50px 0 12px;
+    padding: 50px 0 38px;
   }
 }
 
@@ -32,8 +32,6 @@
 }
 
 .types__list {
-  position: relative;
-
   display: grid;
   justify-content: center;
   max-width: 1286px;
@@ -50,15 +48,27 @@
     display: flex;
     flex-wrap: wrap;
   }
+
+  @media (max-width: $tablet-width) {
+    padding: 0 40px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 0 16px;
+  }
 }
 
 .types__item {
   @media (max-width: $tablet-width) {
-    margin: 0 22px 27px;
+    margin-bottom: 7px;
   }
 
   @media (max-width: 570px) {
-    margin: 0 0 20px;
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin: 0;
   }
 }
 
@@ -71,13 +81,7 @@
     margin-top: 0;
   }
 
-  @media (max-width: 1226px) {
-    margin-top: 0;
-  }
-
   .types__link-picture {
-    position: relative;
-
     &::before {
       content: "";
       position: absolute;
@@ -100,8 +104,8 @@
       }
 
       @media (max-width: $mobile-width) {
-        top: 202px;
-        left: -20px;
+        top: 201px;
+        left: -25px;
       }
     }
   }
@@ -110,13 +114,11 @@
 .types__item:nth-child(3n + 2) {
   margin-top: 39px;
 
-  @media (max-width: 1226px) {
+  @media (max-width: $tablet-width) {
     margin-top: 0;
   }
 
   .types__link-picture {
-    position: relative;
-
     &::before {
       content: "";
       position: absolute;
@@ -155,8 +157,6 @@
 
 .types__item:nth-child(3n + 3) {
   .types__link-picture {
-    position: relative;
-
     &::after {
       content: "";
       position: absolute;
@@ -191,7 +191,14 @@
 }
 
 .types__link-picture {
+  position: relative;
+
   width: 100%;
+  margin-bottom: 22px;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 21px;
+  }
 
   img {
     border-radius: 10px;
@@ -210,8 +217,7 @@
   display: flex;
   justify-content: center;
   max-width: 300px;
-  margin: 16px auto;
-  padding: 5px 20px;
+  margin: 0 auto 16px;
 
   font-weight: 600;
   font-size: 22px;
